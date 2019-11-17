@@ -42,7 +42,7 @@
                             }else if((isset($_GET['status'])) && ($_GET['status'] == "true")){?>
                                 <div class="alert text-success"><?php echo "O número ".$_GET['num']." é primo" ?></div>
                         <?php    
-                            }else{?>
+                            }else if((isset($_GET['status'])) && ($_GET['status'] == "false")){?>
                                 <div class="alert text-danger"><?php echo "O número ".$_GET['num']." não é primo" ?></div>
                         <?php   
                             }

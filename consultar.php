@@ -14,7 +14,7 @@ if(isset($_POST['btn'])){
         $qtd = 0;
         $valor = intval($num);
         
-        while($i <= $valor){
+        while($i <= $valor && $qtd <= 2){
             if(($num % $i) == 0){
                 $qtd = $qtd + 1;
             }
